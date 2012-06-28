@@ -1,0 +1,294 @@
+//Microsoft Developer Studio generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// Chinese (中国) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)
+#ifdef _WIN32
+LANGUAGE LANG_CHINESE, SUBLANG_CHINESE_SIMPLIFIED
+#pragma code_page(936)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#define _AFX_NO_SPLITTER_RESOURCES\r\n"
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)\r\n"
+    "#ifdef _WIN32\r\n"
+    "LANGUAGE 4, 2\r\n"
+    "#pragma code_page(936)\r\n"
+    "#endif //_WIN32\r\n"
+    "#include ""res\\Safeguard.rc2""  // non-Microsoft Visual C++ edited resources\r\n"
+    "#include ""l.chs\\afxres.rc""          // Standard components\r\n"
+    "#endif\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDR_MAINFRAME           ICON    DISCARDABLE     "res\\Safeguard.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_ABOUTBOX DIALOG DISCARDABLE  0, 0, 235, 55
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "关于 Safeguard"
+FONT 9, "宋体"
+BEGIN
+    ICON            IDR_MAINFRAME,IDC_STATIC,11,17,20,20
+    LTEXT           "Safeguard 1.0 版",IDC_STATIC,40,10,119,8,SS_NOPREFIX
+    LTEXT           "版权所有 (C) 2012",IDC_STATIC,40,25,119,8
+    DEFPUSHBUTTON   "确定",IDOK,178,7,50,14,WS_GROUP
+END
+
+IDD_SAFEGUARD_DIALOG DIALOGEX 0, 0, 530, 248
+STYLE DS_MODALFRAME | WS_POPUP | WS_VISIBLE | WS_CAPTION | WS_SYSMENU
+EXSTYLE WS_EX_APPWINDOW
+CAPTION "啦啦啦"
+FONT 9, "宋体"
+BEGIN
+    CONTROL         "List1",IDC_LIST1,"SysListView32",LVS_REPORT | 
+                    LVS_SINGLESEL | WS_BORDER | WS_TABSTOP,23,23,424,184
+    PUSHBUTTON      "添加",IDC_ADD,461,43,53,12
+    PUSHBUTTON      "删除",IDC_DEL,461,75,53,12
+    PUSHBUTTON      "修改",IDC_EDIT,461,108,53,12
+    PUSHBUTTON      "应用",IDC_Apply,461,139,53,12
+    PUSHBUTTON      "退出",IDC_Exit,461,169,53,12
+END
+
+IDD_AddDialog DIALOG DISCARDABLE  0, 0, 227, 275
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "添加规则"
+FONT 10, "System"
+BEGIN
+    DEFPUSHBUTTON   "确定",IDOK,118,256,39,12
+    PUSHBUTTON      "取消",IDCANCEL,171,256,39,12
+    GROUPBOX        "基本设置",IDC_STATIC,21,15,189,56
+    GROUPBOX        "网络设置",IDC_STATIC,20,83,190,160
+    GROUPBOX        "目的端网络范围",IDC_STATIC,26,173,178,66
+    GROUPBOX        "源端网络范围",IDC_STATIC,26,98,179,73
+    LTEXT           "协议类型   :",IDC_STATIC,33,33,41,8
+    LTEXT           "实施动作   :",IDC_STATIC,33,48,41,8
+    LTEXT           "IP地址值    :",IDC_STATIC,37,114,42,8
+    LTEXT           "IP掩位码    :",IDC_STATIC,37,131,42,8
+    LTEXT           "IP地址值    :",IDC_STATIC,38,184,42,8
+    LTEXT           "端口号码   :",IDC_STATIC,37,149,41,8
+    LTEXT           "IP掩位码    :",IDC_STATIC,38,204,42,8
+    LTEXT           "端口号码   :",IDC_STATIC,37,221,41,8
+    EDITTEXT        IDC_EDIT_FromPort,92,148,95,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_ToPort,92,219,95,12,ES_AUTOHSCROLL
+    COMBOBOX        IDC_COMBOtype,92,30,92,48,CBS_DROPDOWNLIST | WS_VSCROLL | 
+                    WS_TABSTOP
+    COMBOBOX        IDC_COMBOact,92,47,92,42,CBS_DROPDOWNLIST | WS_VSCROLL | 
+                    WS_TABSTOP
+    CONTROL         "IPAddress1",IDC_IPyanfrom,"SysIPAddress32",WS_TABSTOP,
+                    92,130,95,12
+    CONTROL         "IPAddress1",IDC_IPfrom,"SysIPAddress32",WS_TABSTOP,92,
+                    112,95,12
+    CONTROL         "IPAddress1",IDC_IPto,"SysIPAddress32",WS_TABSTOP,92,185,
+                    95,12
+    CONTROL         "IPAddress1",IDC_IPyanto,"SysIPAddress32",WS_TABSTOP,92,
+                    202,95,12
+END
+
+IDD_EditDialog DIALOG DISCARDABLE  0, 0, 217, 269
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "对话"
+FONT 10, "System"
+BEGIN
+    DEFPUSHBUTTON   "确定",IDOK,114,248,39,12
+    PUSHBUTTON      "取消",IDCANCEL,166,248,39,12
+    GROUPBOX        "基本设置",IDC_STATIC,16,12,189,56
+    GROUPBOX        "网络设置",IDC_STATIC,15,80,190,160
+    GROUPBOX        "目的端网络范围",IDC_STATIC,21,170,178,66
+    GROUPBOX        "源端网络范围",IDC_STATIC,21,95,179,73
+    LTEXT           "协议类型   :",IDC_STATIC,28,30,41,8
+    LTEXT           "实施动作   :",IDC_STATIC,28,45,41,8
+    LTEXT           "IP地址值    :",IDC_STATIC,32,111,42,8
+    LTEXT           "IP掩位码    :",IDC_STATIC,32,128,42,8
+    LTEXT           "IP地址值    :",IDC_STATIC,33,181,42,8
+    LTEXT           "端口号码   :",IDC_STATIC,32,146,41,8
+    LTEXT           "IP掩位码    :",IDC_STATIC,33,201,42,8
+    LTEXT           "端口号码   :",IDC_STATIC,32,218,41,8
+    EDITTEXT        IDC_EDIT_FromPort,87,145,95,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_ToPort,87,216,95,12,ES_AUTOHSCROLL
+    COMBOBOX        IDC_COMBOtype,87,27,92,48,CBS_DROPDOWNLIST | WS_VSCROLL | 
+                    WS_TABSTOP
+    COMBOBOX        IDC_COMBOact,87,44,92,42,CBS_DROPDOWNLIST | WS_VSCROLL | 
+                    WS_TABSTOP
+    CONTROL         "IPAddress1",IDC_IPyanfrom,"SysIPAddress32",WS_TABSTOP,
+                    87,127,95,12
+    CONTROL         "IPAddress1",IDC_IPfrom,"SysIPAddress32",WS_TABSTOP,87,
+                    109,95,12
+    CONTROL         "IPAddress1",IDC_IPto,"SysIPAddress32",WS_TABSTOP,87,182,
+                    95,12
+    CONTROL         "IPAddress1",IDC_IPyanto,"SysIPAddress32",WS_TABSTOP,87,
+                    199,95,12
+END
+
+
+#ifndef _MAC
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 1,0,0,1
+ PRODUCTVERSION 1,0,0,1
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "080404B0"
+        BEGIN
+            VALUE "CompanyName", "\0"
+            VALUE "FileDescription", "Safeguard Microsoft 基础类应用程序\0"
+            VALUE "FileVersion", "1, 0, 0, 1\0"
+            VALUE "InternalName", "Safeguard\0"
+            VALUE "LegalCopyright", "版权所有 (C) 2012\0"
+            VALUE "LegalTrademarks", "\0"
+            VALUE "OriginalFilename", "Safeguard.EXE\0"
+            VALUE "ProductName", "Safeguard 应用程序\0"
+            VALUE "ProductVersion", "1, 0, 0, 1\0"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x804, 1200
+    END
+END
+
+#endif    // !_MAC
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO DISCARDABLE 
+BEGIN
+    IDD_ABOUTBOX, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 228
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 48
+    END
+
+    IDD_SAFEGUARD_DIALOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 524
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 241
+    END
+
+    IDD_AddDialog, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 220
+        BOTTOMMARGIN, 268
+    END
+
+    IDD_EditDialog, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 210
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 262
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_ABOUTBOX            "关于 Safeguard(&A)..."
+END
+
+#endif    // Chinese (中国) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_SPLITTER_RESOURCES
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)
+#ifdef _WIN32
+LANGUAGE 4, 2
+#pragma code_page(936)
+#endif //_WIN32
+#include "res\Safeguard.rc2"  // non-Microsoft Visual C++ edited resources
+#include "l.chs\afxres.rc"          // Standard components
+#endif
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+
