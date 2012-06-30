@@ -1,0 +1,24 @@
+
+
+386_OBJECTS=\
+ $(OBJ_PATH)\$O\miniport.obj \
+ $(OBJ_PATH)\$O\passthru.obj \
+ $(OBJ_PATH)\$O\protocol.obj \
+ $(OBJ_PATH)\$O\ptextend.obj \
+ $(OBJ_PATH)\$O\filter.obj \
+
+
+_RES_FILE=$(OBJ_PATH)\$O\passthru.res
+PRECOMPILED_INCLUDE_BASENAME=precomp.h
+
+
+
+
+# lowercased
+BASEDIR=c:\winddk\7600.16385.1
+OBJECT_ROOT=c:\winddk\7600.16385.1
+MAKEDIR_LOWERCASE=c:\winddk\7600.16385.1\src\network\ndis\passthru\driver
+MAKEDIR_RELATIVE_TO_BASEDIR=src\network\ndis\passthru\driver
+OBJ_PATH=c:\winddk\7600.16385.1\src\network\ndis\passthru\driver
+CONCURRENT_MIDL=0
+CONCURRENT_MANIFEST_BUILD=0
