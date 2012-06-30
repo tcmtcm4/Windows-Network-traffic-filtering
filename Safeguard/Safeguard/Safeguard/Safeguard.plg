@@ -1,0 +1,43 @@
+<html>
+<body>
+<pre>
+<h1>Build Log</h1>
+<h3>
+--------------------Configuration: Safeguard - Win32 Debug--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating temporary file "C:\DOCUME~1\xuniji\LOCALS~1\Temp\RSP2D.tmp" with contents
+[
+/nologo /MDd /W3 /Gm /GX /ZI /Od /D "WIN32" /D "_DEBUG" /D "_WINDOWS" /D "_AFXDLL" /D "_MBCS" /Fp"Debug/Safeguard.pch" /Yu"stdafx.h" /Fo"Debug/" /Fd"Debug/" /FD /GZ /c 
+"C:\Documents and Settings\xuniji\桌面\Safeguard\Safeguard\Safeguard\SafeguardDlg.cpp"
+]
+Creating command line "cl.exe @C:\DOCUME~1\xuniji\LOCALS~1\Temp\RSP2D.tmp" 
+Creating temporary file "C:\DOCUME~1\xuniji\LOCALS~1\Temp\RSP2E.tmp" with contents
+[
+/nologo /subsystem:windows /incremental:yes /pdb:"Debug/Safeguard.pdb" /debug /machine:I386 /out:"Debug/Safeguard.exe" /pdbtype:sept 
+".\Debug\AddDlg.obj"
+".\Debug\EditDlg.obj"
+".\Debug\ptutils.obj"
+".\Debug\Safeguard.obj"
+".\Debug\SafeguardDlg.obj"
+".\Debug\StdAfx.obj"
+".\Debug\Safeguard.res"
+]
+Creating command line "link.exe @C:\DOCUME~1\xuniji\LOCALS~1\Temp\RSP2E.tmp"
+<h3>Output Window</h3>
+Compiling...
+SafeguardDlg.cpp
+C:\Documents and Settings\xuniji\桌面\Safeguard\Safeguard\Safeguard\SafeguardDlg.cpp(221) : warning C4551: function call missing argument list
+C:\Documents and Settings\xuniji\桌面\Safeguard\Safeguard\Safeguard\SafeguardDlg.cpp(269) : warning C4551: function call missing argument list
+C:\Documents and Settings\xuniji\桌面\Safeguard\Safeguard\Safeguard\SafeguardDlg.cpp(416) : warning C4551: function call missing argument list
+C:\Documents and Settings\xuniji\桌面\Safeguard\Safeguard\Safeguard\SafeguardDlg.cpp(488) : warning C4551: function call missing argument list
+Linking...
+LINK : warning LNK4076: invalid incremental status file "Debug/Safeguard.ilk"; linking nonincrementally
+
+
+
+<h3>Results</h3>
+Safeguard.exe - 0 error(s), 0 warning(s)
+</pre>
+</body>
+</html>
